@@ -1,14 +1,16 @@
 clc; clear;
-% Setup
+% Setup Achtung immer lieber *e-3 benutzen!!!
 JM  =  0.125*exp(-5); %
 dM  =   1.0*exp(-5); 
 rM  =   25*10^(-3);
 RM  =   1.5;
 LM  =   1.0*exp(-3);
-omegaM = 0.1125;
+
 PHIi=2.6e-2;
 PHIM=0.1125;
-omegaL = 2.6*exp(-2);
+OL = 2.6*exp(-2);
+OL=PHIi;
+OM = 0.1125;
 
 JL  =   2*exp(-5);
 c   =   50;
@@ -18,8 +20,9 @@ rL  =   50*10^(-3);
 ML  =   0.25;
 Uq  =   24;
 
-Nils_Bestehorn_WS19_modell
-% A2 %%Problem im Modell!!!
+Nils_Bestehorn_WS19_modell %Achtung Modell geht leider nicht richtig!!! irgenwo die Verbindung falsch
+% A2 
+%% Problem im Modell!!!
 [Am,Bm,Cm,Dm]=linmod('Nils_Bestehorn_WS19_modell');
 
 

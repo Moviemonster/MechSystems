@@ -43,12 +43,12 @@ D=[ 0;0];
 [Zaehler,Nenner]=ss2tf(A,B,C,D,1); %Äquivalten zu State Space Block
 fhz=0:0.1:20*2*pi; % input frequenz
 figure ('Name',"A4_Uebertagungsfunktion Bode durch A2")
-bode(Zaehler(2,:),Nenner,fhz);grid; % Bode Diagramm
+bode(Zaehler(1,:),Nenner,fhz);grid; % Bode Diagramm
 title('Übertragungsfunktion |F2/Zh|')
 
 %% A4_Alternative_ mit_A3
 [Zaehler,Nenner]=ss2tf(Am,Bm,Cm,Dm,1); %Äquivalten zu State Space Block
 fhz=0:0.1:20*2*pi; % input frequenz
 figure ('Name',"A4_Uebertagungsfunktion Bode durch A3")
-bode(Zaehler(2,:),Nenner,fhz);grid; % Bode Diagramm
+bode(Zaehler(1,:),Nenner,fhz);grid; % Bode Diagramm
 title('Übertragungsfunktion |F2/Zh|')
